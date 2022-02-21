@@ -6,9 +6,12 @@
 * [Author and contact](#author-and-contact)
 
 ## General info
+This Shiny application was written in RStudio (ver. 1.3.1073; R ver. 4.02) as an example of how to automate R analysis by dedicated micro-applications.
+The author used classification testing as an example mainly due to working with multiple classification algorithms during his PhD; however it shows only
+a simplified approach to the issue. 
 
-
-RStudio (ver. 1.3.1073; R ver. 4.02)
+The application enables user to firstly input a dataset (so far only in a CSV format) and define columns to be used [Stage 1]. Once set, users can define
+selected details, like classification type to be utilized, input values to trainControl() function or whether to apply data normalisation before algorithm training [Stage 2]. Due to the app being only an exaple, only a selection of methods applicable to train() method has been implemented. Finally, users can download a train() result printout as well as two visualisations of gathered accuracy and kappa values, as box or violin plots [Stage 3].
 
 ## Setup
 To be able to run or modify the app R and RStudio have to be installed on your computer:
